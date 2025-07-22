@@ -1,150 +1,132 @@
-<style>
-  /* Reset some default padding/margin for better control */
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: #333;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1rem 2rem 4rem; /* bottom padding to avoid content hiding behind nav */
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Richard Jean So — Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+      line-height: 1.6;
+      color: #333;
+    }
+    h1, h2 {
+      color: #004080;
+      margin-bottom: 0.3rem;
+    }
+    nav {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.5rem;
+      display: flex;
+      gap: 1rem;
+      font-weight: 600;
+    }
+    nav a {
+      color: #0066cc;
+      text-decoration: none;
+      padding: 0.25rem 0.5rem;
+    }
+    nav a:hover,
+    nav a.active {
+      text-decoration: underline;
+      color: #004080;
+    }
+    .header-title {
+      margin-bottom: 0.5rem;
+    }
+    .header-subtitle {
+      font-weight: 400;
+      margin-bottom: 1.5rem;
+      color: #555;
+    }
+    .project-area {
+      margin-bottom: 2rem;
+    }
+    .project-area strong {
+      font-size: 1.15rem;
+      color: #003366;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .project-area p {
+      margin: 0 0 1rem 0;
+      font-style: italic;
+      color: #222;
+    }
+    .project-card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      background-color: #f9f9f9;
+    }
+    .project-card strong {
+      font-weight: 700;
+      display: block;
+      margin-bottom: 0.3rem;
+      color: #003366;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="header-title">Richard Jean So</h1>
+  <p class="header-subtitle">Professor of English & Digital Humanities | Duke University</p>
 
-  /* Top Navigation Bar */
-  nav {
-    position: sticky;
-    top: 0;
-    background-color: #004080;
-    padding: 1rem 2rem;
-    display: flex;
-    gap: 1.5rem;
-    z-index: 100;
-  }
+  <nav>
+    <a href="index.html">About</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="publications.html">Key Publications</a>
+    <a href="cv.html">CV</a>
+    <a href="students.html">Students</a>
+    <a href="collaborations.html">Collaborations</a>
+  </nav>
 
-  nav a {
-    color: #e0e0e0;
-    text-decoration: none;
-    font-weight: 600;
-  }
+  <section>
+    <p>I am currently working in two areas:</p>
 
-  nav a:hover {
-    text-decoration: underline;
-  }
-
-  nav a.active {
-    color: #ffd966;
-    text-decoration: underline;
-  }
-
-  /* Page Heading */
-  #projects h2 {
-    color: #004080;
-    margin-bottom: 1rem;
-    margin-top: 3rem; /* extra spacing below nav */
-  }
-
-  /* Descriptions container */
-  .project-area-description {
-    margin-bottom: 2rem;
-  }
-
-  /* Style and separate the two area descriptions */
-  .project-area-description > div {
-    border: 1.5px solid #0066cc;
-    background-color: #e6f0ff;
-    padding: 1rem 1.5rem;
-    border-radius: 10px;
-    margin-bottom: 1.5rem;
-  }
-
-  .project-area-description strong {
-    display: block;
-    font-size: 1.2rem;
-    color: #003366;
-    margin-bottom: 0.4rem;
-  }
-
-  /* Project cards */
-  .project-card {
-    border: 1px solid #ccc;
-    padding: 1rem 1.5rem;
-    margin-bottom: 1.5rem;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-  }
-
-  .project-card strong {
-    display: block;
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-    color: #003366;
-  }
-
-  .project-card p {
-    margin: 0;
-  }
-
-  /* Section subheadings */
-  #projects h3 {
-    margin-top: 2.5rem;
-    color: #0066cc;
-  }
-</style>
-
-<nav>
-  <a href="index.html">Home</a>
-  <a href="projects.html" class="active">Projects</a>
-  <a href="publications.html">Publications</a>
-  <a href="students.html">Students</a>
-  <a href="collaborations.html">Collaborations</a>
-  <a href="contact.html">Contact</a>
-</nav>
-
-<section id="projects">
-  <h2>Projects</h2>
-
-  <div class="project-area-description">
-    <div>
+    <div class="project-area">
       <strong>Cultural Analytics</strong>
       <p>The use of computational, AI, and data science methods to study and analyze culture, particularly contemporary digital and online culture.</p>
+
+      <div class="project-card">
+        <strong>Fast Culture, Slow Justice</strong> (book in progress)
+        <p>A case study of #BLM in 2020 exploring how platforms like Twitter and Wattpad transformed public storytelling and galvanized social movements.</p>
+      </div>
+
+      <div class="project-card">
+        <strong>Split Screens</strong> (with Tess McNulty and Hoyt Long, under review)
+        <p>A study of the relationship between TV aesthetic preference/viewing and US political voting from 2016–2022, focusing on polarization.</p>
+      </div>
+
+      <div class="project-card">
+        <strong>Cultural and Aesthetic Sources for Political and Social Behavior</strong> (with David Bamman, Hoyt Long, and Tess McNulty)
+        <p>A series of papers combining machine vision analysis of popular TV shows with political/social data to understand how aesthetic and narrative preferences relate to political behavior.</p>
+      </div>
     </div>
-    <div>
+
+    <div class="project-area">
       <strong>Cultural AI</strong>
       <p>The experimental testing of generative AI models to perform and enact cultural tasks and behaviors (e.g., authorship, interpretation), aiming to improve AI systems through cultural insight and theory.</p>
+
+      <div class="project-card">
+        <strong>The Social AI Author</strong> (with Edwin Roland and Hoyt Long)
+        <p>Generative AI simulations exploring how AI agents behave as authors and model social preferences and creative success.</p>
+      </div>
+
+      <div class="project-card">
+        <strong>Close Reading and LLM Co-intelligence</strong> (with Mina Lee, Jiayin Zhi, and Hoyt Long)
+        <p>HCI experiments testing whether LLMs can enhance students' ability to close read and enjoy poetry.</p>
+      </div>
+
+      <div class="project-card">
+        <strong>Cultural AI: Building a New Research Field</strong> (with Aarthi Vadde)
+        <p>A methodological paper outlining goals for enriching AI with humanistic insight and creating tools for cultural research.</p>
+      </div>
     </div>
-  </div>
-
-  <h3>Cultural Analytics</h3>
-  
-  <div class="project-card">
-    <strong>Fast Culture, Slow Justice</strong> (book in progress)  
-    <p>A case study of #BLM in 2020 exploring how platforms like Twitter and Wattpad transformed public storytelling and galvanized social movements.</p>
-  </div>
-
-  <div class="project-card">
-    <strong>Split Screens</strong> (with Tess McNulty and Hoyt Long, under review)  
-    <p>A study of the relationship between TV aesthetic preference/viewing and US political voting from 2016–2022, focusing on polarization.</p>
-  </div>
-
-  <div class="project-card">
-    <strong>Cultural and Aesthetic Sources for Political and Social Behavior</strong> (with David Bamman, Hoyt Long, and Tess McNulty)  
-    <p>A series of papers combining machine vision analysis of popular TV shows with political/social data to understand how aesthetic and narrative preferences relate to political behavior.</p>
-  </div>
-
-  <h3>Cultural AI</h3>
-
-  <div class="project-card">
-    <strong>The Social AI Author</strong> (with Edwin Roland and Hoyt Long)  
-    <p>Generative AI simulations exploring how AI agents behave as authors and model social preferences and creative success.</p>
-  </div>
-
-  <div class="project-card">
-    <strong>Close Reading and LLM Co-intelligence</strong> (with Mina Lee, Jiayin Zhi, and Hoyt Long)  
-    <p>HCI experiments testing whether LLMs can enhance students' ability to close read and enjoy poetry.</p>
-  </div>
-
-  <div class="project-card">
-    <strong>Cultural AI: Building a New Research Field</strong> (with Aarthi Vadde)  
-    <p>A methodological paper outlining goals for enriching AI with humanistic insight and creating tools for cultural research.</p>
-  </div>
-</section>
+  </section>
+</body>
+</html>
