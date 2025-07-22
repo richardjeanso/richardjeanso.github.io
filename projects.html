@@ -1,26 +1,70 @@
 <style>
-  #projects {
-    max-width: 800px;
-    margin: 0 auto;
+  /* Reset some default padding/margin for better control */
+  body {
+    margin: 0;
     font-family: Arial, sans-serif;
     color: #333;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 2rem 4rem; /* bottom padding to avoid content hiding behind nav */
   }
 
+  /* Top Navigation Bar */
+  nav {
+    position: sticky;
+    top: 0;
+    background-color: #004080;
+    padding: 1rem 2rem;
+    display: flex;
+    gap: 1.5rem;
+    z-index: 100;
+  }
+
+  nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  nav a.active {
+    color: #ffd966;
+    text-decoration: underline;
+  }
+
+  /* Page Heading */
   #projects h2 {
     color: #004080;
     margin-bottom: 1rem;
+    margin-top: 3rem; /* extra spacing below nav */
   }
 
-  #projects h3 {
-    margin-top: 2.5rem;
-    color: #0066cc;
-  }
-
+  /* Descriptions container */
   .project-area-description {
     margin-bottom: 2rem;
-    font-style: italic;
   }
 
+  /* Style and separate the two area descriptions */
+  .project-area-description > div {
+    border: 1.5px solid #0066cc;
+    background-color: #e6f0ff;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+  }
+
+  .project-area-description strong {
+    display: block;
+    font-size: 1.2rem;
+    color: #003366;
+    margin-bottom: 0.4rem;
+  }
+
+  /* Project cards */
   .project-card {
     border: 1px solid #ccc;
     padding: 1rem 1.5rem;
@@ -39,17 +83,35 @@
   .project-card p {
     margin: 0;
   }
+
+  /* Section subheadings */
+  #projects h3 {
+    margin-top: 2.5rem;
+    color: #0066cc;
+  }
 </style>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="projects.html" class="active">Projects</a>
+  <a href="publications.html">Publications</a>
+  <a href="students.html">Students</a>
+  <a href="collaborations.html">Collaborations</a>
+  <a href="contact.html">Contact</a>
+</nav>
 
 <section id="projects">
   <h2>Projects</h2>
 
   <div class="project-area-description">
-    I am currently working in two areas:
-    <ul>
-      <li><strong>Cultural Analytics</strong> – The use of computational, AI, and data science methods to study and analyze culture, particularly contemporary digital and online culture.</li>
-      <li><strong>Cultural AI</strong> – The experimental testing of generative AI models to perform and enact cultural tasks and behaviors (e.g., authorship, interpretation), aiming to improve AI systems through cultural insight and theory.</li>
-    </ul>
+    <div>
+      <strong>Cultural Analytics</strong>
+      <p>The use of computational, AI, and data science methods to study and analyze culture, particularly contemporary digital and online culture.</p>
+    </div>
+    <div>
+      <strong>Cultural AI</strong>
+      <p>The experimental testing of generative AI models to perform and enact cultural tasks and behaviors (e.g., authorship, interpretation), aiming to improve AI systems through cultural insight and theory.</p>
+    </div>
   </div>
 
   <h3>Cultural Analytics</h3>
@@ -66,7 +128,7 @@
 
   <div class="project-card">
     <strong>Cultural and Aesthetic Sources for Political and Social Behavior</strong> (with David Bamman, Hoyt Long, and Tess McNulty)  
-    <p>A series of papers combining machine vision analysis of popular TV shows with political/social data to understand how aesthetic and narrative preferences shape political behavior.</p>
+    <p>A series of papers combining machine vision analysis of popular TV shows with political/social data to understand how aesthetic and narrative preferences relate to political behavior.</p>
   </div>
 
   <h3>Cultural AI</h3>
