@@ -12,6 +12,7 @@
     --rule: #d8d6d0;
     --accent: #6d2733;
     --paper: #fdfdfc;
+    --sans: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
   }
 
   * { box-sizing: border-box; }
@@ -21,44 +22,51 @@
     background: var(--paper);
     color: var(--ink);
     font-family: Charter, "Bitstream Charter", "Iowan Old Style", "Source Serif Pro", Georgia, serif;
-    font-size: 18px;
-    line-height: 1.65;
+    font-size: 16px;
+    line-height: 1.6;
   }
 
   .wrap {
-    max-width: 41rem;
-    margin: 0 auto;
-    padding: 4rem 1.5rem 5rem;
+    max-width: 36rem;
+    margin: 0;
+    padding: 3.5rem 2rem 4rem 4rem;
   }
 
   h1 {
-    font-size: 2.6rem;
+    font-size: 2.1rem;
     line-height: 1.05;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.015em;
     font-weight: 600;
     margin: 0;
   }
 
   .role {
-    font-family: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
-    font-size: 0.83rem;
-    line-height: 1.5;
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    line-height: 1.45;
     color: var(--ink-soft);
-    margin: 0.9rem 0 0;
-    max-width: 26rem;
+    margin: 0.75rem 0 0;
+  }
+
+  .role span { display: block; }
+
+  .email {
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    margin: 0.5rem 0 0;
   }
 
   nav {
-    font-family: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
-    font-size: 0.9rem;
-    margin: 2rem 0 0;
-    padding: 0.9rem 0;
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    margin: 1.6rem 0 0;
+    padding: 0.75rem 0;
     border-top: 1px solid var(--rule);
     border-bottom: 1px solid var(--rule);
   }
 
   nav a {
-    margin-right: 1.6rem;
+    margin-right: 1.4rem;
     color: var(--ink);
     text-decoration: none;
     border-bottom: 1px solid transparent;
@@ -70,40 +78,25 @@
   nav a[aria-current="page"] { border-bottom-color: var(--ink); }
 
   h2 {
-    font-size: 1.15rem;
+    font-size: 1.05rem;
     font-weight: 600;
-    letter-spacing: 0.01em;
-    margin: 3.2rem 0 1.1rem;
+    margin: 2.6rem 0 1rem;
   }
 
-  p { margin: 0 0 1.15rem; }
+  p { margin: 0 0 1.05rem; }
 
   a { color: var(--accent); }
   a:hover { text-decoration: none; }
 
-  /* --- photo: replace photo.jpg, or delete this block and the <img> below --- */
+  /* Portrait: add photo.jpg to the repo, or delete this rule and the <img> below */
   .portrait {
     float: right;
-    width: 8.5rem;
-    margin: 0.4rem 0 1.2rem 1.8rem;
+    width: 7.5rem;
+    margin: 0.3rem 0 1rem 1.5rem;
     border-radius: 2px;
   }
 
-  .bio { margin-top: 2.6rem; }
-
-  .book {
-    margin: 2.6rem 0 0;
-    padding: 1.4rem 0 0;
-    border-top: 1px solid var(--rule);
-  }
-
-  .book .title { font-style: italic; }
-
-  .book .meta {
-    font-family: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
-    font-size: 0.83rem;
-    color: var(--ink-soft);
-  }
+  .bio { margin-top: 2.2rem; }
 
   ol.pubs {
     list-style: none;
@@ -112,8 +105,8 @@
   }
 
   ol.pubs li {
-    margin: 0 0 1.5rem;
-    padding-left: 1.1rem;
+    margin: 0 0 1.35rem;
+    padding-left: 1rem;
     border-left: 2px solid var(--rule);
   }
 
@@ -122,28 +115,27 @@
 
   ol.pubs .with {
     display: block;
-    font-family: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
-    font-size: 0.83rem;
+    font-family: var(--sans);
+    font-size: 0.78rem;
     color: var(--ink-soft);
-    line-height: 1.5;
-    margin-top: 0.2rem;
+    line-height: 1.45;
+    margin-top: 0.15rem;
   }
 
   footer {
-    margin-top: 3.2rem;
-    padding-top: 1.2rem;
+    margin-top: 2.8rem;
+    padding-top: 1rem;
     border-top: 1px solid var(--rule);
-    font-family: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
-    font-size: 0.88rem;
+    font-family: var(--sans);
+    font-size: 0.8rem;
     color: var(--ink-soft);
   }
 
-  @media (max-width: 34rem) {
-    body { font-size: 17px; }
-    .wrap { padding: 2.5rem 1.25rem 3.5rem; }
-    h1 { font-size: 2rem; }
-    .portrait { width: 6.5rem; margin-left: 1.1rem; }
-    nav a { margin-right: 1.1rem; }
+  @media (max-width: 40rem) {
+    .wrap { padding: 2.5rem 1.25rem 3rem; }
+    h1 { font-size: 1.8rem; }
+    .portrait { width: 6rem; margin-left: 1rem; }
+    nav a { margin-right: 1rem; }
   }
 </style>
 </head>
@@ -151,10 +143,15 @@
 <div class="wrap">
 
   <h1>Richard Jean So</h1>
-  <p class="role">Rhodes Chair in Digital Humanities and Associate Professor of English, Duke University</p>
+  <p class="role">
+    <span>Rhodes Chair in Digital Humanities</span>
+    <span>Associate Professor of English, Duke University</span>
+  </p>
+  <p class="email"><a href="mailto:richard.so@duke.edu">richard.so@duke.edu</a></p>
 
   <nav>
     <a href="index.html" aria-current="page">About</a>
+    <a href="book.html">New Book</a>
     <a href="cv.html">CV</a>
     <a href="lab.html">Lab</a>
   </nav>
@@ -168,11 +165,6 @@
     <p>This grows out of a decade spent studying culture on online platforms and who gets heard on them. That work culminates in <em>Fast Culture, Slow Justice: BLM, Platforms, and the Limits of Storytelling</em> (Columbia University Press, 2026), which draws on data from Twitter, Wattpad, and Goodreads to ask why so much online storytelling about racial justice produced so much attention and so little durable change. I also write for general audiences, including <em>The New York Times</em> and <em>The Atlantic</em>.</p>
 
     <p>I am a core member of the Rhodes Information Initiative at Duke and a faculty affiliate of the Society-Centered AI Initiative.</p>
-  </section>
-
-  <section class="book">
-    <p><span class="title">Fast Culture, Slow Justice: BLM, Platforms, and the Limits of Storytelling</span><br>
-    <span class="meta">Columbia University Press, December 2026. <a href="#">Pre-order</a></span></p>
   </section>
 
   <h2>Recent publications</h2>
@@ -208,10 +200,12 @@
     <li>
       <span class="title">How Fiction Powers Large Language Models</span><br>
       <span class="venue">New Literary History</span>.
+      <span class="with">With Edwin Roland.</span>
     </li>
     <li>
       <span class="title">Cultural AI: Generative Technologies for the Humanities</span><br>
       <span class="venue">Modern Fiction Studies</span>.
+      <span class="with">With Aarthi Vadde.</span>
     </li>
     <li>
       <span class="title">Spoiler Alert: Narrative Forecasting as a Metric for Tension in LLM Storytelling</span><br>
