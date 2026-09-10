@@ -1,87 +1,300 @@
+
+Claude finished the response
+Thought for 2s
+Refining a clause about AI's impact on cultural platforms.
+Thought for 2s
+I run the Cultural AI Lab, where undergraduate and graduate students in the humanities, computer science, and data science work together on the downstream effects of AI models on cultural production and the platforms that carry it: how generative models are reshaping the content people encounter online, what machines can and cannot make on their own, and how human judgment holds up when machines evaluate us. Prospective PhD applicants in English are welcome to contact me directly. Duke undergraduates and graduate students from any of these fields should look at the Cultural AI Lab page for current projects and how to get involved.
+
+"Downstream effects" is the phrase doing the work — it says you study consequences at the level of platforms and audiences rather than models, which is the distinction that separates you from everyone else at Duke working on AI. And it tells a CS student the research is empirical rather than critique, which is the thing that decides whether they email you.
+
+One trade: "the content people encounter online" is plainer than "digital content" but slightly longer. If the field is tight on characters, swap it back.
+
+Do the mix, but not as two equal halves.
+
+Six items in two labeled blocks of three reads as padding — it tells a visitor you had three published things and needed to fill the page. The asymmetry is what makes it credible: four or five published, two or three in progress. Published work is the evidence; in-progress is the signal that the lab is live right now.
+
+The in-progress block earns its place for a specific reason. Your published record is still mostly 2023–24 and mostly cultural analytics, while the thing you're claiming to lead is Cultural AI. The current work is where the slop program, HAVI, and the interpretive-authority studies actually show up. Without it, the page argues for a field you have no visible work in.
+
+Two rules for it. Only list things that are genuinely under review or in a public preprint, with a venue-neutral label — "under review," "preprint" — never a named target journal. Naming a target reads as either a claim or a jinx, and if it lands somewhere else you've documented the miss. And no titles you might abandon; a stale in-progress list is worse than none, since it invites people to check whether anything shipped.
+
+Order it published-first, in-progress-second, despite your instinct. A visitor who reads top to bottom should hit the strongest evidence before the promises. "Recent Publications" then "In Progress," with the second heading smaller or the items shorter, so the page's weight sits on the real record.
+
+One maintenance note: this section is the only thing on the site with a shelf life. When something moves from in-progress to published, it just changes blocks. Put a note in your calendar for early January, otherwise it's 2028 and the page still says "under review."
+
+OK good for Recent Publications, do Critical Confabluation (ICLR), The Social Ai Author (AI and society), Why Slop Matters (ACM Notes), What does AI do for cultural interpretation (CHI) ... and nothing under review, worried about jinx ... but fothcoming ... How Fiction Powers Large Language Mmodels (forthocming New LIterayr History), Cultural AI: Generative Technologies for the Humanities (Modern Fiction Stuies), Spoiler Alert: Narrative Forecasting as a Metric for Tension in LLM Sstorytelling ... good?
+
+Good list — and the forthcoming block solves the jinx problem cleanly. Forthcoming means accepted, so you're stating a fact, not a hope.
+
+Seven items is fine at this density. Two notes and one gap.
+
+The lineup does exactly what it should. Four published across ICLR, AI & Society, ACM, and CHI, then three forthcoming across NLH, MFS, and — Spoiler Alert at COLM, presumably. That's CS, interdisciplinary, and humanities venues in one glance, which is the argument the whole page is making. It also fixes the recency problem: nothing here is 2023.
+
+Spoiler Alert needs its venue. The other six carry one and it'll look unfinished without it. If COLM isn't decided, list it as a preprint with an arXiv link instead — that's still a fact and still checkable.
+
+The gap is the public writing. You mention NYT and Atlantic essays in the bio, then never show one. Anyone arriving from the December op-ed will scan for it. If you have a live link, a short "Public Writing" list of two or three items is worth 20 minutes of the afternoon — and it's the section that matters most in November when journalists start looking you up.
+
+For each entry I'll need coauthors and a link, same as your current format. Send them however is easiest — pasted BibTeX, a rough list, whatever — and I'll normalize the formatting.
+
+One small thing: your current page uses curly quotes in some titles and straight quotes in others. I'll standardize as I go.
+
+https://arxiv.org/abs/2604.09854, https://link.springer.com/article/10.1007/s00146-025-02790-0?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=oa_20251205&utm_content=10.1007/s00146-025-02790-0, https://arxiv.org/abs/2601.06060, https://chi-star-workshop.github.io/src/assets/pdf/papers/AI_and_Close_Reading_%28STAR%20workshop%20version%29.pdf, MFS and NLH pares are forthcoming, narrative forecasting paper is accepted for COLM
+
+Fetched 4 pages, read a file, and 2 more tools
+Paste this over index.html and commit.
+
+On the look: white paper, near-black ink, one oxblood accent, serif body with a sans for nav and metadata. The name is the only loud thing on the page; everything else stays quiet. Publications hang off a thin left rule instead of sitting in bullets, which keeps long multi-author lines readable.
+
+Three things need your hand before it's live:
+
+Critical Confabulation has a placeholder link (href="#") — you didn't send one. Same for the book's pre-order link.
+photo.jpg — add it to the repo or delete the one <img> line. It's marked with a comment.
+Two forthcoming pieces have no coauthors listed. Send them and I'll add.
+Two content notes. I pulled the exact titles and author lists from the sources you sent, so Spoiler Alert now shows all seven authors and the CHI entry points to the full CHI '26 paper rather than the workshop PDF — that's the version you want cited. And I listed AI & Society as 2026, matching the issue date rather than the December 2025 online date.
+
+The nav points at cv.html and lab.html. The first exists but needs rewriting; the second doesn't exist yet, so that link will 404 until Friday. Worth knowing if you're pushing this live now.
+
+
+Index
+Code·HTML 
+
+Write a message…
+
+
+Claude is AI and can make mistakes.
+
+
+Index · HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Richard Jean So — Cultural Analytics, Digital Humanities and AI</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 2rem;
-      line-height: 1.6;
-      color: #333;
-    }
-    h1, h2 {
-      color: #004080;
-    }
-    nav {
-      margin-bottom: 2rem;
-    }
-    nav a {
-      margin-right: 1rem;
-      text-decoration: none;
-      color: #0066cc;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Richard Jean So — Cultural AI</title>
+<meta name="description" content="Richard Jean So is the Rhodes Chair in Digital Humanities and Associate Professor of English at Duke University. He studies what changes when machines become participants in culture.">
+<style>
+  :root {
+    --ink: #14161a;
+    --ink-soft: #4a4f57;
+    --rule: #d8d6d0;
+    --accent: #6d2733;
+    --paper: #fdfdfc;
+  }
+ 
+  * { box-sizing: border-box; }
+ 
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Charter, "Bitstream Charter", "Iowan Old Style", "Source Serif Pro", Georgia, serif;
+    font-size: 18px;
+    line-height: 1.65;
+  }
+ 
+  .wrap {
+    max-width: 41rem;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 5rem;
+  }
+ 
+  h1 {
+    font-size: 2.6rem;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+    margin: 0;
+  }
+ 
+  .role {
+    font-family: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 0.83rem;
+    line-height: 1.5;
+    color: var(--ink-soft);
+    margin: 0.9rem 0 0;
+    max-width: 26rem;
+  }
+ 
+  nav {
+    font-family: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 0.9rem;
+    margin: 2rem 0 0;
+    padding: 0.9rem 0;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+ 
+  nav a {
+    margin-right: 1.6rem;
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+  }
+ 
+  nav a:hover,
+  nav a:focus { border-bottom-color: var(--accent); }
+  nav a[aria-current="page"] { border-bottom-color: var(--ink); }
+ 
+  h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    margin: 3.2rem 0 1.1rem;
+  }
+ 
+  p { margin: 0 0 1.15rem; }
+ 
+  a { color: var(--accent); }
+  a:hover { text-decoration: none; }
+ 
+  /* --- photo: replace photo.jpg, or delete this block and the <img> below --- */
+  .portrait {
+    float: right;
+    width: 8.5rem;
+    margin: 0.4rem 0 1.2rem 1.8rem;
+    border-radius: 2px;
+  }
+ 
+  .bio { margin-top: 2.6rem; }
+ 
+  .book {
+    margin: 2.6rem 0 0;
+    padding: 1.4rem 0 0;
+    border-top: 1px solid var(--rule);
+  }
+ 
+  .book .title { font-style: italic; }
+ 
+  .book .meta {
+    font-family: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 0.83rem;
+    color: var(--ink-soft);
+  }
+ 
+  ol.pubs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+ 
+  ol.pubs li {
+    margin: 0 0 1.5rem;
+    padding-left: 1.1rem;
+    border-left: 2px solid var(--rule);
+  }
+ 
+  ol.pubs .title { font-weight: 600; }
+  ol.pubs .venue { font-style: italic; }
+ 
+  ol.pubs .with {
+    display: block;
+    font-family: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 0.83rem;
+    color: var(--ink-soft);
+    line-height: 1.5;
+    margin-top: 0.2rem;
+  }
+ 
+  footer {
+    margin-top: 3.2rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid var(--rule);
+    font-family: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+  }
+ 
+  @media (max-width: 34rem) {
+    body { font-size: 17px; }
+    .wrap { padding: 2.5rem 1.25rem 3.5rem; }
+    h1 { font-size: 2rem; }
+    .portrait { width: 6.5rem; margin-left: 1.1rem; }
+    nav a { margin-right: 1.1rem; }
+  }
+</style>
 </head>
 <body>
+<div class="wrap">
+ 
   <h1>Richard Jean So</h1>
-  <p><strong>Professor of English & Digital Humanities | Duke University</strong></p>
-
+  <p class="role">Rhodes Chair in Digital Humanities and Associate Professor of English, Duke University</p>
+ 
   <nav>
-    <a href="index.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="pubs.html">Key Publications</a>
+    <a href="index.html" aria-current="page">About</a>
     <a href="cv.html">CV</a>
-    <a href="students.html">Students</a>
-    <a href="collaborations.html">Collaborations</a>
+    <a href="lab.html">Lab</a>
   </nav>
-
-<section id="about">
-  <h2>About</h2>
-  <p>I am the Rhodes Chair in Digital Humanities and Associate Professor of English at Duke University. My work bridges the humanities and data science: I use computational methods and AI to study culture, and I explore how cultural insight and critical theory can help shape more ethical and meaningful AI systems.</p>
-
-  <p>My research appears in leading humanities journals such as <em>PMLA</em> and <em>Critical Inquiry</em>, as well as in scientific venues like <em>ACL</em> and <em>PNAS</em>. I also write for broader audiences, with recent essays in <em>The New York Times</em> and <em>The Atlantic</em>.</p>
-</section>
-
-  <p><strong>Contact:</strong> richard.so@duke.edu</p>
-
-  <section id="recent-work">
-  <h2>Recent Work</h2>
-  <ul>
+ 
+  <section class="bio">
+    <!-- Add photo.jpg to the repo, or delete the next line -->
+    <img class="portrait" src="photo.jpg" alt="Richard Jean So">
+ 
+    <p>I study what changes when machines and artificial intelligence become participants in culture: making it, being judged on it, and increasingly judging us. Methodologically, I combine close interpretive attention to how culture actually works with large-scale computational analysis, experiments, and surveys, asking how people decide what counts as slop, what creative work models still cannot do on their own, and how much interpretive authority people keep when a machine offers a reading. These are humanistic questions being decided at technical scale, and my work operates at the intersection of the humanities and computer science: it appears in <em>PMLA</em>, <em>Critical Inquiry</em>, and <em>New Literary History</em> as well as PNAS, ACL, ICLR, and CHI. My research has been supported by humanities organizations such as the ACLS as well as scientific funders such as Schmidt Sciences. I direct the Cultural AI Lab at Duke.</p>
+ 
+    <p>This grows out of a decade spent studying culture on online platforms and who gets heard on them. That work culminates in <em>Fast Culture, Slow Justice: BLM, Platforms, and the Limits of Storytelling</em> (Columbia University Press, 2026), which draws on data from Twitter, Wattpad, and Goodreads to ask why so much online storytelling about racial justice produced so much attention and so little durable change. I also write for general audiences, including <em>The New York Times</em> and <em>The Atlantic</em>.</p>
+ 
+    <p>I am a core member of the Rhodes Information Initiative at Duke and a faculty affiliate of the Society-Centered AI Initiative.</p>
+  </section>
+ 
+  <section class="book">
+    <p><span class="title">Fast Culture, Slow Justice: BLM, Platforms, and the Limits of Storytelling</span><br>
+    <span class="meta">Columbia University Press, December 2026. <a href="#">Pre-order</a></span></p>
+  </section>
+ 
+  <h2>Recent publications</h2>
+  <ol class="pubs">
     <li>
-      <strong>"Covid, Crisis and the Search for Story in the Platform Age"</strong><br>
-      <em>Critical Inquiry</em> (2023)<br>
-      Co-authored with Hoyt Long and Kaitlyn Todd.<br>
-      <a href="https://www.journals.uchicago.edu/doi/abs/10.1086/725059" target="_blank" rel="noopener">Read paper</a>
+      <span class="title">Critical Confabulation</span><br>
+      <span class="venue">International Conference on Learning Representations (ICLR)</span>, 2026.
+      <a href="#">Read paper</a>
+      <span class="with">With Peiqi Sui, Eamon Duede, and Hoyt Long.</span>
     </li>
     <li>
-      <strong>“Confabulation: The Surprising Value of Large Language Model Hallucinations”</strong><br>
-      <em>Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics</em> (2024)<br>
-      Co-authored with Peiqi Sui, Eamon Duede, and Sophie Wu.<br>
-      <a href="https://aclanthology.org/2024.acl-long.770/" target="_blank" rel="noopener">Read paper</a>
+      <span class="title">The Social AI Author: Modeling Creativity and Distinction in Simulated Cultural Fields</span><br>
+      <span class="venue">AI &amp; Society</span>, 2026.
+      <a href="https://link.springer.com/article/10.1007/s00146-025-02790-0" target="_blank" rel="noopener">Read paper</a>
+      <span class="with">With Edwin Roland and Hoyt Long.</span>
     </li>
     <li>
-      <strong>“The Humanistic Case for AI Optimism”</strong><br>
-      <em>Poetics Today</em> (2024)<br>
-      Co-authored with Eamon Duede.<br>
-      <a href="https://read.dukeupress.edu/poetics-today/article-abstract/45/2/215/387708/The-Humanistic-Case-for-AI-Optimism" target="_blank" rel="noopener">Read article</a>
+      <span class="title">Why Slop Matters</span><br>
+      <span class="venue">ACM AI Letters</span>, 2026.
+      <a href="https://arxiv.org/abs/2601.06060" target="_blank" rel="noopener">Read paper</a>
+      <span class="with">With Cody Kommers, Eamon Duede, Julia Gordon, Ari Holtzman, Tess McNulty, Spencer Stewart, Lindsay Thomas, and Hoyt Long.</span>
     </li>
     <li>
-      <strong>“Measuring Diversity in Hollywood Through Large-Scale Computational Analysis of Film”</strong><br>
-      <em>Proceedings of the National Academy of Sciences (PNAS)</em> (2024)<br>
-      Co-authored with David Bamman, Rachael Samberg, and Naitian Zhou.<br>
-      <a href="https://www.pnas.org/doi/10.1073/pnas.2409770121" target="_blank" rel="noopener">Read paper</a>
+      <span class="title">What Does AI Do for Cultural Interpretation? A Randomized Experiment on Close Reading with Exposure to AI</span><br>
+      <span class="venue">ACM Conference on Human Factors in Computing Systems (CHI)</span>, 2026.
+      <a href="https://doi.org/10.1145/3772318.3791727" target="_blank" rel="noopener">Read paper</a>
+      <span class="with">With Jiayin Zhi, Hoyt Long, and Mina Lee.</span>
     </li>
-  </ul>
-</section>
-
-
-
+  </ol>
+ 
+  <h2>Forthcoming</h2>
+  <ol class="pubs">
+    <li>
+      <span class="title">How Fiction Powers Large Language Models</span><br>
+      <span class="venue">New Literary History</span>.
+    </li>
+    <li>
+      <span class="title">Cultural AI: Generative Technologies for the Humanities</span><br>
+      <span class="venue">Modern Fiction Studies</span>.
+    </li>
+    <li>
+      <span class="title">Spoiler Alert: Narrative Forecasting as a Metric for Tension in LLM Storytelling</span><br>
+      <span class="venue">Conference on Language Modeling (COLM)</span>, 2026.
+      <a href="https://arxiv.org/abs/2604.09854" target="_blank" rel="noopener">Read preprint</a>
+      <span class="with">With Peiqi Sui, Yutong Zhu, Tianyi Cheng, Peter West, Hoyt Long, and Ari Holtzman.</span>
+    </li>
+  </ol>
+ 
+  <h2>Working together</h2>
+  <p>I am always looking for new collaborators. Faculty, graduate students, and undergraduates interested in this work should visit the <a href="lab.html">Cultural AI Lab</a> page to see current projects and ways we might work together.</p>
+ 
+  <footer>
+    <a href="mailto:richard.so@duke.edu">richard.so@duke.edu</a> · Department of English, Duke University
+  </footer>
+ 
+</div>
 </body>
 </html>
+ 
